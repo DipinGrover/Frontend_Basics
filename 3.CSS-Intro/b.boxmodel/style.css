@@ -1,0 +1,51 @@
+html {
+    /* unless changed every element has box-sizing as border box */
+    box-sizing: border-box; 
+    /* all elemnts should have border box*/
+}
+
+*,*:before,*:after {
+
+    /* we allow the child to follow the parent box sizing */
+
+    box-sizing: inherit;
+    /* but if some elements have content box as box sizing we want its child also inherit its box sizing*/
+    /* https://css-tricks.com/box-sizing/   for more refernce */
+}
+
+ /* * {   */
+    /* box-sizing: border-box; */
+    /* whatever width you give it will be allocated to content + padding + border */
+
+    /* box-sizing: content-box; */
+    /* whatever width you give it will be allocated to content only */
+/* } */
+
+#demo {
+    border: solid red 5px;
+
+    /* combined property of all 3 */
+    /* border-style: solid;
+    border-width: 5px;
+    border-color: red; */   
+
+
+    padding: 10px;
+    width: 200px; /* width of the content*/
+    margin-bottom: 10px;
+
+}
+
+#demo2
+{
+    border: solid red 5px;
+    padding: 10px;
+    width: 200px; /* width of the content*/
+
+    box-sizing: content-box;
+
+}
+
+#demo3 {
+    border: solid blue 5px;
+}

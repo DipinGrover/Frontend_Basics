@@ -1,0 +1,97 @@
+/* External CSS */
+
+/* h4 {
+    font-size: 29px;
+}
+
+h2{
+    color: crimson;
+} */
+
+
+
+
+
+
+
+
+
+/* selectors  */
+
+*{
+    /* this is same as selecting h1,h2,p,div,span,nav,footer....... and then applying styling  */
+    /* this is a universal selector , whatever you write here is applied to everything */
+    
+}
+
+body{
+    background-color: #dae8e5;
+}
+
+header{
+    background-color: white;   
+}
+
+.mid-text {
+    color: darkseagreen;
+}
+
+#head-text {
+    text-decoration: underline dotted;
+
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration    for more details */
+}
+
+/* attribute selector example */
+/* input[disabled] {
+    background-color: beige;
+} */
+
+h2 span {
+    /* selects only those span that are inside h2 */
+    color: chocolate;
+}
+
+div .extra {
+    /* extra is present indide div->span->span */
+    text-decoration-line: underline;
+}
+
+div ~ h4 {
+    background-color: gainsboro;
+}
+
+h4 + p {
+    background-color: fuchsia;
+}
+
+a:hover {
+    text-decoration-line: none;
+}
+
+/* button:hover {
+    color: darkred;
+} */
+
+a:visited {
+    color: black;
+}
+
+div :first-child {
+    border: 1px solid red;
+}
+
+/* psuedo elements */
+div::before {
+    content: "...";
+}
+
+/* psuedo elements */
+div::after {
+    content: "...";
+}
+
+p::first-line 
+{
+    background-color: cornflowerblue;
+}
